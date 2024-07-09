@@ -16,7 +16,7 @@ const FormPopup = ({ showPopup, handleClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/refer-check', formData);
+      const response = await axios.post('https://accredian-backend-8pqw.onrender.com/api/refer-check', formData);
       console.log(response.data);
       alert('Referral successfully completed');
     } catch (error) {
